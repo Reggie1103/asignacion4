@@ -1,0 +1,63 @@
+header, footer {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    flex-shrink: 0;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+nav {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 40px); /* Ajustar para la altura del header y footer */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+#noticias {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las secciones se envuelvan si no caben en una línea */
+    gap: 20px; /* Espacio entre las secciones */
+    padding: 20px;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+/* Sección individual dentro de noticias */
+.opciones {
+    background-color: #002D54;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+    flex: 1; /* Permite que las secciones crezcan igualmente */
+    min-width: 200px; /* Mínimo ancho para que las secciones no se vuelvan demasiado pequeñas */
+    box-sizing: border-box;
+    overflow: hidden; /* Oculta el desbordamiento */
+}
+
+/* Asegurarse de que el contenido del p se ajuste al div */
+.opciones p {
+    word-wrap: break-word; /* Permite el ajuste de palabras largas */
+    overflow-wrap: break-word; /* Permite el ajuste de palabras largas */
+    margin: 0; /* Quitar margen del párrafo */
+}
